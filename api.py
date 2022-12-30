@@ -10,7 +10,7 @@ response = requests.get(
 
 # Load the response data into a Python dictionary
 news_data = json.loads(response.text)
-print(news_data)
+
 # Print the top news articles
 for article in news_data["articles"]:
     print(article["title"])
